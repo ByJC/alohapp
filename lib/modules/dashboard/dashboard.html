@@ -1,0 +1,20 @@
+<ion-view>
+    <ion-nav-title>{{ 'ui.dashboard.title' | translate }}</ion-nav-title>
+    <ion-content style="background-color: #eee;">
+        <div class="list">
+            <div class="list card" ng-repeat="alarm in dashboardCtrl.alarms track by $index">
+                <div class="item item-avatar">
+                    <div>{{ alarm.time }}</div>
+                    <div>{{ alarm.adress}}, {{ alarm.zipCode}}, {{alarm.city}}</div>
+                </div>
+                <div class="item item-body">
+                    <ion-toggle ng-model="alarm.active" ng-checked="alarm.active"></ion-toggle>
+                    <a class="button icon-right ion-chevron-right button-calm" ui-sref="root.alarm(::{ id: $index })">Learn More</a>
+                </div>
+           </div>
+       </div>
+        <button class="button button-block button-positive" ng-click="dashboardCtrl.addAlarm();">
+            Add Alarm
+        </button>
+    </ion-content>
+</ion-view>
