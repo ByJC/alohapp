@@ -9,7 +9,7 @@
         <script src="cordova.js"></script>
     </head>
 
-    <body ng-strict-di ng-app="prototype">
+    <body ng-strict-di ng-app="alohapp">
         <ion-nav-view></ion-nav-view>
         {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
         <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
