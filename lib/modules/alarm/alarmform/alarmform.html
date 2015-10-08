@@ -4,39 +4,36 @@
 
         <label class="item item-input">
           <span class="input-label">Adress</span>
-          <input type="text">
+          <input type="text" ng-model="alarmFormCtrl.alarm.adress">
         </label>
 
         <label class="item item-input">
           <span class="input-label">City</span>
-          <input type="text">
+          <input type="text" ng-model="alarmFormCtrl.alarm.city">
         </label>
 
         <label class="item item-input">
           <span class="input-label">ZipCode</span>
-          <input type="text">
+          <input type="text" ng-model="alarmFormCtrl.alarm.zipCode">
         </label>
 
-        <label class="item item-input">
-          <span class="input-label">Hour</span>
-          <input type="time">
-        </label>
+        <span class="input-label">Hour</span>
+        <al-time-picker hours="alarmFormCtrl.alarm.time.hours" minutes="alarmFormCtrl.alarm.time.minutes"></al-time-picker>
 
         <label class="item item-input">
           <span class="input-label">WakeUpTime</span>
-          <input type="text">
+          <input type="text" ng-model="alarmFormCtrl.alarm.wakeupTime">
         </label>
 
         <label class="item item-input">
           <span class="input-label">PreparationTime</span>
-          <input type="text">
+          <input type="text" ng-model="alarmFormCtrl.alarm.preparationTime">
         </label>
 
         <label class="item item-input">
           <span class="input-label">TransportMode</span>
-          <input type="text">
+          <input type="text" ng-model="alarmFormCtrl.alarm.transportMode">
         </label>
-
 
         <button class="button button-block button-positive" ng-click="alarmFormCtrl.createAlarm();">
             Create Alarm

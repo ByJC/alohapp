@@ -4,7 +4,7 @@
         <div class="list">
             <div class="list card" ng-repeat="alarm in dashboardCtrl.alarms track by $index">
                 <div class="item item-avatar">
-                    <div>{{ alarm.time }}</div>
+                    <div>{{ alarm.time.hours }} : {{ alarm.time.minutes }}</div>
                     <div>{{ alarm.adress}}, {{ alarm.zipCode}}, {{alarm.city}}</div>
                 </div>
                 <div class="item item-body">
