@@ -1,0 +1,13 @@
+<ion-view>
+    <ion-nav-title>Alarm Details</ion-nav-title>
+    <ion-content>
+        <div class="list card" ng-if="postCtrl.item" style="margin: 0;">
+            <div class="item item-avatar">
+                <h2>{{::postCtrl.item.name}}</h2>
+            </div>
+            <div class="item item-body">
+                <p ng-bind-html="::postCtrl.item.description"></p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

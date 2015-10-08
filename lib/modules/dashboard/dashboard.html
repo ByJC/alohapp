@@ -14,11 +14,11 @@
                          <div class="handle"></div>
                        </div>
                     </label>
-                    <a class="button icon-right ion-chevron-right button-calm" ui-sref="root.alarm(::{ id: $index })">Learn More</a>
+                    <a class="button icon-right ion-chevron-right button-calm" native-transitions ui-sref="root.alarm(::{ id: $index })">Learn More</a>
                 </div>
            </div>
        </div>
-        <button class="button button-block button-positive" ng-click="dashboardCtrl.addAlarm();">
+        <button class="button button-block button-positive" native-transitions ui-sref="root.create">
             Add Alarm
         </button>
     </ion-content>
