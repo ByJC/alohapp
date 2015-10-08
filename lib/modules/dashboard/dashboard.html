@@ -8,7 +8,12 @@
                     <div>{{ alarm.adress}}, {{ alarm.zipCode}}, {{alarm.city}}</div>
                 </div>
                 <div class="item item-body">
-                    <ion-toggle ng-model="alarm.active" ng-checked="alarm.active"></ion-toggle>
+                    <label class="toggle">
+                       <input type="checkbox">
+                       <div class="track">
+                         <div class="handle"></div>
+                       </div>
+                    </label>
                     <a class="button icon-right ion-chevron-right button-calm" ui-sref="root.alarm(::{ id: $index })">Learn More</a>
                 </div>
            </div>
