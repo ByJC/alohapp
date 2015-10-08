@@ -13,7 +13,7 @@
     "runIosDevice": "npm run dumpdev && cordova run ios --device",
     "platformAddAndroid": "cordova platform add android",
     "platformAddIOS": "cordova platform add ios",
-    "pluginAddAll": "cordova plugin add cordova-plugin-whitelist@1.0.0"
+    "pluginAddAll": "cordova plugin add https://github.com/Telerik-Verified-Plugins/NativePageTransitions#0.4.2"
   },
   "repository": {
     "type": "git",
@@ -50,9 +50,10 @@
   },
   "dependencies": {
     "angular-translate": "^2.8.0",
+    "glob": "~5.0.5",
+    "ionic-native-transitions": "^1.0.0-beta2",
     "ionic-sdk": "^1.0.0",
     "lodash": "^3.9.3",
-    "glob": "~5.0.5",
     "object-sizeof": "~1.0.0"
   }
 }
