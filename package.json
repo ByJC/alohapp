@@ -13,7 +13,7 @@
     "runIosDevice": "npm run dumpdev && cordova run ios --device",
     "platformAddAndroid": "cordova platform add android",
     "platformAddIOS": "cordova platform add ios",
-    "pluginAddAll": "cordova plugin add https://github.com/Telerik-Verified-Plugins/NativePageTransitions#0.4.2 && cordova plugin add https://github.com/wnyc/cordova-plugin-wakeuptimer.git"
+    "pluginAddAll": "cordova plugin add https://github.com/wnyc/cordova-plugin-wakeuptimer.git && cordova plugins add https://github.com/uniclau/AlarmPlugin.git"
   },
   "repository": {
     "type": "git",
